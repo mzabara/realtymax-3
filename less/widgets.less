@@ -1,0 +1,167 @@
+.widget{
+  margin: 15px 0 25px -15px;
+  .clearfix;
+  .widget-title{
+    border-bottom:solid 1px #e1e1e1;
+    margin: 0 0 15px 0;
+    line-height: normal;
+    padding-bottom: 5px;
+    .clearfix;
+    a{
+      display: inline-block;
+      border-bottom: solid 1px transparent;
+      &:hover{
+        text-decoration: none;
+        border-bottom-color: red;
+      }
+    }
+    h1{
+      display: inline-block;
+      margin: 0;
+      font-family: @roboto;
+      font-weight: normal;
+    }
+    .widget-body{
+      .clearfix;
+    }
+  }
+  &.latest-news{
+    .widget-body{
+      margin: 0 -15px;
+      .widget-item{
+        .make-md-column(6);
+        &:first-child{
+          padding-right: 7.5px;
+        }
+        &:last-child{
+          padding-left: 7.5px;
+        }
+        .widget-item-image{
+          overflow: hidden;
+          height: 190px;
+          margin-bottom: 10px;
+        }
+        .widget-item-title{
+          font-family: @roboto;
+          font-size: 16px;
+          margin-bottom: 10px;
+          a{
+            border-bottom: solid 1px transparent;
+            &:hover{
+              border-bottom-color: red;
+              text-decoration: none;
+            }
+          }
+        }
+        .widget-item-description{
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  &.latest-articles{
+    .widget-body{
+      margin: 0 -7.5px;
+      .widget-item{
+        .make-md-column(4);
+        padding:0 7.5px;
+        .widget-item-image{
+          overflow: hidden;
+          height: 190px;
+          margin-bottom: 10px;
+        }
+        .widget-item-title{
+          font-family: @roboto;
+          font-size: 16px;
+          margin-bottom: 10px;
+          a{
+            border-bottom: solid 1px transparent;
+            &:hover{
+              border-bottom-color: red;
+              text-decoration: none;
+            }
+          }
+        }
+        .widget-item-description{
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  &.latest-interview{
+    .widget-body{
+      margin: 0 -7.5px;
+      .widget-item{
+        .make-md-column(6);
+        padding:0 7.5px;
+        .widget-item-image{
+          display: none;
+        }
+        .widget-item-title{
+          font-family: @roboto;
+          font-size: 16px;
+          padding:15px 15px 0 15px;
+          background-color: #eeeeee;
+          overflow: hidden;
+          height: 62px;
+          a{
+            color: #333333;
+            border-bottom: solid 1px transparent;
+            &:hover{
+              border-bottom-color: #333333;
+              text-decoration: none;
+            }
+          }
+        }
+        .widget-item-description{
+          position: relative;
+          padding:8px 15px 15px 15px;
+          line-height: 16px;
+          background-color: #eeeeee;
+          &:after{
+            position: absolute;
+            bottom: -15px;
+            left: 79px;
+            content: " ";
+            background: url("../images/interview-preview-baloon-arrow.png") 0 0 no-repeat;
+            width: 16px;
+            height: 15px;
+          }
+          p{
+            overflow: hidden;
+            height: 48px;
+            margin: 0;
+          }
+        }
+        .widget-item-author{
+          margin-top: 20px;
+          .clearfix;
+          .widget-item-author-photo{
+            float: left;
+            margin-right: 15px;
+            width: 61px;
+            height: 61px;
+            overflow: hidden;
+            img{
+              width: 61px;
+              height: 61px;
+            }
+          }
+          .widget-item-author-personal-data{
+            overflow: hidden;
+            zoom: 1;
+            .fio{
+              font-family: @roboto;
+              font-size: 16px;
+              margin-bottom: 5px;
+            }
+            .post{
+              font-size: 11px;
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+  }
+}
