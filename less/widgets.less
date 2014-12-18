@@ -1,5 +1,5 @@
 .widget{
-  margin: 15px 0 25px -15px;
+  margin: 15px 0 25px 0;
   .clearfix;
   .widget-title{
     border-bottom:solid 1px #e1e1e1;
@@ -29,7 +29,7 @@
     .widget-body{
       margin: 0 -15px;
       .widget-item{
-        .make-md-column(6);
+        .make-sm-column(6);
         &:first-child{
           padding-right: 7.5px;
         }
@@ -63,7 +63,7 @@
     .widget-body{
       margin: 0 -7.5px;
       .widget-item{
-        .make-md-column(4);
+        .make-sm-column(4);
         padding:0 7.5px;
         .widget-item-image{
           overflow: hidden;
@@ -92,18 +92,30 @@
     .widget-body{
       margin: 0 -7.5px;
       .widget-item{
-        .make-md-column(6);
+        .make-sm-column(6);
         padding:0 7.5px;
+        .latest-interview-preview{
+          position: relative;
+          background-color: #eeeeee;
+          padding: 15px;
+          height: 132px;
+          &:after{
+            position: absolute;
+            bottom: -15px;
+            left: 79px;
+            content: " ";
+            background: url("../images/interview-preview-baloon-arrow.png") 0 0 no-repeat;
+            width: 16px;
+            height: 15px;
+          }
+        }
         .widget-item-image{
           display: none;
         }
         .widget-item-title{
           font-family: @roboto;
           font-size: 16px;
-          padding:15px 15px 0 15px;
-          background-color: #eeeeee;
-          overflow: hidden;
-          height: 62px;
+          margin-bottom: 10px;
           a{
             color: #333333;
             border-bottom: solid 1px transparent;
@@ -114,24 +126,9 @@
           }
         }
         .widget-item-description{
-          position: relative;
-          padding:8px 15px 15px 15px;
           line-height: 16px;
-          background-color: #eeeeee;
-          &:after{
-            position: absolute;
-            bottom: -15px;
-            left: 79px;
-            content: " ";
-            background: url("../images/interview-preview-baloon-arrow.png") 0 0 no-repeat;
-            width: 16px;
-            height: 15px;
-          }
-          p{
-            overflow: hidden;
-            height: 48px;
-            margin: 0;
-          }
+          overflow: hidden;
+          height: 48px;
         }
         .widget-item-author{
           margin-top: 20px;

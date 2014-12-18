@@ -1,3 +1,191 @@
-.site-header-logotyp{
+.site-header-logotyp {
+  .make-sm-column(4);
+}
 
+.site-nav{
+  float: right;
+  margin: 0 15px 0 0;
+  border-bottom: solid 1px #d9d9d9;
+  &.open{
+    .active{
+      color: #3a7ebb;
+      border-bottom: transparent;
+    }
+    .dropdown{
+      color: #000000;
+      cursor: default;
+      text-decoration: none;
+      border-bottom: solid 2px #000000;
+    }
+  }
+
+  a{
+    display: inline-block;
+    padding-bottom: 4px;
+    margin: 0 0 0 25px;
+    vertical-align: top;
+    color: #3a7ebb;
+    font-size: 16px;
+    border-bottom: solid 2px #ffffff;
+    font-family: @roboto;
+    &:hover{
+      text-decoration: none;
+      color: #ea1720;
+      border-bottom: solid 2px #ea1720;
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    &.active{
+      color: #000000;
+      cursor: default;
+      text-decoration: none;
+      border-bottom: solid 2px #000000;
+    }
+    &.burger-icon{
+      margin-top: 5px;
+      padding-bottom: 0;
+      width: 16px;
+      height: 13px;
+      background:url("../images/icons/burger.png") no-repeat 0 0;
+      border-bottom: none;
+      &:hover{
+        background-position: 0 -13px;
+      }
+      &.active{
+        background-position: 0 -26px;
+      }
+    }
+  }
+}
+
+.site-content-sorting-filter {
+  margin: 15px 15px 0 15px;
+
+  .sorting-filter-form-tabs {
+    color: #555555;
+    font-family: @roboto;
+    .sorting-filter-form-tabs-title {
+      font-size: 14px;
+      float: left;
+      margin-right: 10px;
+    }
+    .sorting-filter-form-tabs-list {
+      float: left;
+      margin: 0 0 15px 0;
+      .list-unstyled;
+      li {
+        float: left;
+        margin-right: 15px;
+        &.active{
+          a{
+            color: #333333;
+            border-bottom-color: transparent;
+          }
+        }
+        a {
+          font-size: 14px;
+          border-bottom: dotted 1px @link-color;
+          &:hover{
+            text-decoration: none;
+            border-bottom-color: transparent;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+
+  .fast-search-by-name {
+    float: right;
+    height: 27px;
+    margin-top: -3px;
+    form {
+      float: left;
+      padding: 0 5px 0 10px;
+      border: solid 1px #dfdddd;
+      border-radius: 3px;
+      z-index: 2;
+      .form-control {
+        float: left;
+        width: 237px;
+        padding: 0;
+        margin-bottom: 0;
+        box-shadow: none;
+        border-color: #ffffff;
+        height: 25px!important;
+        border-radius: 0;
+        .transition-property(width);
+        .transition-delay(0.45s);
+        .transition-duration(0.25s);
+        .transition-timing-function(ease-in);
+        &:focus{
+          width: 301px;
+        }
+      }
+      .fast-search-by-name-btn{
+        margin: 5px 0 0 10px;
+        width: 16px;
+        height: 16px;
+        background: url("../images/icons/zoom.png") 0 0 no-repeat;
+        font-size: 0;
+        border:none;
+        &:hover{
+          background-position:0 100%;
+        }
+      }
+      .dropdown-menu {
+        top: 32px;
+        padding: 0 20px 10px 20px;
+        left: -20px;
+        width: 385px;
+        border: solid 1px #cedeee;
+        &:before {
+          content: "";
+          display: block;
+          margin: -1px 0 0 0;
+          width: 18px;
+          height: 10px;
+          background: url("../images/icons/fast-name-search-result-arrow.png") 0 0 no-repeat!important;
+        }
+        .page-header {
+          padding: 0;
+          margin: 15px 0 0 0;
+          border-bottom-color: #d2d3d6;
+          font-size: 14px;
+        }
+        .fast-search-by-name-result {
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          li {
+            margin: 2px 0;
+            padding: 0;
+            a {
+              display: block;
+              padding: 5px 10px;
+              &:hover {
+                background-color: #ededed;
+                text-decoration: none;
+              }
+              .fast-search-by-name-region {
+                color: #858585;
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sorting-filter-form {
+    height: 65px;
+    background-color: #dfefff;
+    border: solid 1px #d1e0ef;
+  }
 }
