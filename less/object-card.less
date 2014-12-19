@@ -1,0 +1,53 @@
+.developer-info{
+  display: inline-block;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+    a{
+      .solid-link;
+    }
+}
+
+.object-card-holder{
+  .thumbnail-gallery{
+    float: left;
+    width: 28.83rem;
+    height: 16.92rem;
+    overflow: hidden;
+  }
+  .caption{
+    padding-left: 1.25rem;
+    overflow: hidden;
+    zoom: 1;
+    .item-price{
+      margin-bottom: 0.8333rem;
+      font-family: @roboto;
+      line-height: @line-height-rem-base;
+      .clearfix;
+      .item-price-title{
+        .font-size(14);
+      }
+      .item-price-value{
+        .font-size(20);
+      }
+    }
+    .item-characteristics{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li{
+        padding: 4px 0;
+        border-bottom: solid 1px #ebebeb;
+        .characteristic-title{
+          color: #939393;
+        }
+        a{
+          .solid-link;
+        }
+      }
+    }
+  }
+  .item-description{
+    margin: 15px 0;
+    line-height: @line-height-small;
+  }
+}

@@ -1,0 +1,5 @@
+.font-size(@font-size-px) {
+  @remValue: (@font-size-px / @font-size-rem-base);
+  font-size: ~"@{font-size-px}px";
+  font-size: ~"@{remValue}rem";
+}
