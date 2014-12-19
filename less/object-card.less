@@ -8,6 +8,27 @@
 }
 
 .object-card-holder{
+
+  //Navigation tabs
+  .nav-tabs{
+    margin-bottom: 1.5rem;
+    padding-left: 0.5833rem;
+    border-bottom-color: #dcdcdc;
+    & > li{
+        &.active{
+        & a{
+          &:hover{
+            background: #ffffff;
+          }
+        }
+      }
+      & a{
+        color: #858585;
+        border-radius: 0;
+        padding: 0.5rem 0.6667rem;
+      }
+    }
+  }
   .thumbnail-gallery{
     float: left;
     width: 28.83rem;
